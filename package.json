@@ -1,5 +1,5 @@
 {
-  "name": "go-migrator-wrapper",
+  "name": "@monkee/go-migrate-wrapper",
   "description": "go-migrator package",
   "version": "0.9.5",
   "main": "lib/index.js",
@@ -41,12 +41,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/monke-systems/go-migrator-wrapper.git"
+    "url": "https://github.com/monke-systems/go-migrate-wrapper.git"
   },
   "bugs": {
-    "url": "https://github.com/monke-systems/go-migrator-wrapper.git/issues"
+    "url": "https://github.com/monke-systems/go-migrate-wrapper.git/issues"
   },
-  "homepage": "https://github.com/monke-systems/go-migrator-wrapper.git/#readme",
+  "homepage": "https://github.com/monke-systems/go-migrate-wrapper.git/#readme",
   "jest": {
     "moduleFileExtensions": [
       "js",
