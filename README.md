@@ -1,20 +1,32 @@
-# go-migrator package
+# @monkee/go-migrate-wrapper package
 
-## Package update flow
+## Description
 
-Package publishing only available via CI jobs.
+Wrapper for golang cli tool [migrate](https://github.com/golang-migrate/migrate)
 
-You must use '-beta' postfix for testing purposes. Otherwise CI job being failed. Bump version via npm
+## Installation
 
-```bash
-npm version prerelease --preid beta
-```
+First you need to [install the migrate tool](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate#installation)
 
-Before merge changes into master branch you should remove 'beta' postfix
+Then install the library
 
 ```bash
-npm version major | minor | patch
+npm i @monkee/go-migrate-wrapper
 ```
 
-Learn more <https://docs.npmjs.com/cli/v8/commands/npm-version>
+## Example usage
 
+```typescript
+import { Migrate } from '@monkee/go-migrate-wrapper';
+
+const main = () => {
+  const migrate = new Migrate();
+
+  migrate.up({
+    source: 'file://migrations',
+    database: 'mysql://root:123321@tcp(localhost:3306)/test_db',
+  });
+};
+
+main();
+```
