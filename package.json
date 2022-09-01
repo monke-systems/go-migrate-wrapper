@@ -1,7 +1,7 @@
 {
   "name": "@monkee/go-migrate-wrapper",
   "description": "go-migrator package",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
