@@ -47,7 +47,6 @@ https://github.com/golang-migrate/migrate/tree/master/cmd/migrate#installation`)
 
   private runBinary(args: string) {
     const fullCommand = `${this.opts.binaryPath} ${args}`;
-    console.log(fullCommand);
 
     return execSync(fullCommand, {
       stdio: 'pipe',

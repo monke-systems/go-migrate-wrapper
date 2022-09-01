@@ -5,5 +5,10 @@ parserOptions:
 env:
   node: true
   jest: true
+rules:
+  'no-console':
+    - error
+    - allow:
+        - error
 extends:
   - '@monkee/eslint-config/typescript'
